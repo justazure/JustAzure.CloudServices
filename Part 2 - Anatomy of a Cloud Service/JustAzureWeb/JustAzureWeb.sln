@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "JustAzureWeb", "JustAzureWeb\JustAzureWeb.ccproj", "{782269A7-9933-4EB6-A5B8-61C1F542E98D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustAzureWebRole", "JustAzureWebRole\JustAzureWebRole.csproj", "{93481E79-2AB7-4B5B-BB6E-4966197A04EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminBackoffice", "AdminBackoffice\AdminBackoffice.csproj", "{1432CFD7-94DA-48E4-8BDD-43D49EC00D16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{782269A7-9933-4EB6-A5B8-61C1F542E98D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782269A7-9933-4EB6-A5B8-61C1F542E98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782269A7-9933-4EB6-A5B8-61C1F542E98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782269A7-9933-4EB6-A5B8-61C1F542E98D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93481E79-2AB7-4B5B-BB6E-4966197A04EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93481E79-2AB7-4B5B-BB6E-4966197A04EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93481E79-2AB7-4B5B-BB6E-4966197A04EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93481E79-2AB7-4B5B-BB6E-4966197A04EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1432CFD7-94DA-48E4-8BDD-43D49EC00D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1432CFD7-94DA-48E4-8BDD-43D49EC00D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1432CFD7-94DA-48E4-8BDD-43D49EC00D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1432CFD7-94DA-48E4-8BDD-43D49EC00D16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
