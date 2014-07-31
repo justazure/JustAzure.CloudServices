@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="LocalResourceDemo" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-01.2.3">
+  <Role name="LocalResourceDemo.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=testcs12365;AccountKey=3sJC44TCFoikqsgU8lrejpKoROZzuASmlnUOb0wYO2N3mgvR1dKX2a6wiwNjdCcM3I3JybGeDeB4PLWz4x34og==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
