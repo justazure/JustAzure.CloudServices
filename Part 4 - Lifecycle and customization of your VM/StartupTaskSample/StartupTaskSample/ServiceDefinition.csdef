@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="StartupTaskSample" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WebRole name="StartupTaskSample.Web" vmsize="Small">
+    <Runtime executionContext="elevated" />
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Startup>
+      <Task commandLine="..\Startup.cmd" executionContext="elevated" taskType="simple">
+        <Environment>
+          <Variable name="LogFileName" value="Startup.log" />
+          <Variable name="LogFileDirectory">
+            <RoleInstanceValue xpath="/RoleEnvironment/CurrentInstance/LocalResources/LocalResource[@name='LogsPath']/@path"/>
+          </Variable>
+          <Variable name="InstanceId">
+            <RoleInstanceValue xpath="/RoleEnvironment/CurrentInstance/@id" />
+          </Variable>
+          <Variable name="RoleName">
+            <RoleInstanceValue xpath="/RoleEnvironment/CurrentInstance/@roleName" />
+          </Variable>
+        </Environment>
+      </Task>
+    </Startup>
+    <LocalResources>
+      <LocalStorage name="LogsPath" cleanOnRoleRecycle="false" sizeInMB="1024" />
+    </LocalResources>
+  </WebRole>
+</ServiceDefinition>
